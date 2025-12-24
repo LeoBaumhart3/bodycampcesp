@@ -6,7 +6,8 @@
 
 <style>
 :root {
-    --logo-size: 48px; /* <<< AJUSTE AQUI O TAMANHO DA LOGO */
+    --scale: 2.0;      /* <<< AUMENTE OU DIMINUA AQUI (1.2 / 1.5 / 2.0) */
+    --logo-size: 48px;
 }
 
 body {
@@ -26,7 +27,11 @@ body {
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0 0 18px rgba(183,28,28,0.6);
+
+    transform: scale(var(--scale));
+    transform-origin: top right;
 }
+
 
 /* LIVE */
 .live {
